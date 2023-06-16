@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+/** Variables - colors **/
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /*Blue */
+    --color-blue-50: #048DBA;
+    --color-blue-100: #9CA6FF;
+    --color-blue-200: #5C6EB8;
+    --color-blue-300: #150182;
+    --color-blue-400: #579CAD;
+    --color-blue-500: #8352e3;
+
+    /* Gradient */
+    --color-gradient: linear-gradient(90deg, var(--color-blue-500), var(--color-blue-400));
+}
+
+/* General */
+* {
+    font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #9CA6FF;
+}
+
+.cards_header {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: var(--color-light-50);
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+/* Cards Header */
+#cards_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#cards_header h1 {
+    font-size: 60px;
+    position: relative;
+    color: var(--color-blue-300);
+}
+
+#cards_header h3 {
+    font-size: 30px;
+    position: relative;
+}
+
+#cards_header p {
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    margin-right: 30rem;
+    margin-left: 30rem;
+}
+
+/* Nav */
+
+.navbar {
+    background-color: #150182;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+}
+
+.account-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.account-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cards */
+
+div.cards {
+    display: flex;
+    padding: 32px;
+}
+
+div.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+div.cards section.card:first-child {
+    margin-left: 0;
+}
+
+div.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+div.cards section.card img {
+    width: 100%;
+}
+
+div.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+div.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+div.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+}
+
+div.cards section.card a {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #f8fafc;
+    background: var(--color-gradient);
+    margin-bottom: 16px 0;
+    text-decoration: none;
+}
+
+div.cards section.card button {
+    background: var(--color-gradient);
+}
+
+div.cards section.card {
+    box-shadow: 20px 20px 50px -30px var(--color-blue-100);
+}
+
+
+@media screen and (max-width: 720px) {
+    div.cards {
+        flex-direction: column;
+    }
+
+    div.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    div.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    div.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+

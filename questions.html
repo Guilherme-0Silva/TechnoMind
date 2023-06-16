@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/questions.css">
+
+    <title>Perguntas - Technomind</title>
+</head>
+
+<body>
+    <main id="container">
+        <div class="questions justify-center flex-column hidden">
+            <div id="questions_header">
+                <h1>TechnoMind</h1>
+                <h3>Perguntas</h3>
+                <br>
+                <div class="inputs_1">
+                    <div class="input-box">
+                        <label for="name">
+                            Se você fosse descrever a felicidade em uma imagem, como seria essa imagem?
+                            <div class="input-field">
+                                <input type="text" id="awnswer" name="name" oninput="adaptarTexto()" placeholder="Digite sua resposta aqui">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs_2 hiddens">
+                    <div class="input-box">
+                        <label for="name">
+                            Se você pudesse mudar uma coisa no mundo, o que seria e como você acredita que essa mudança impactaria as pessoas?
+                            <div class="input-field">
+                                <input type="text" id="awnswer" name="name" oninput="adaptarTexto()" placeholder="Digite sua resposta aqui">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <button id="submit_button_1" class="" onclick="showNextInput()">Próxima</button>
+                <a href="home.html" id="submit_button_2" class="hiddens" onclick="showNextInput()">Próxima</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="Assets/Js/app.js"></script>
+</body>
+
+</html>
